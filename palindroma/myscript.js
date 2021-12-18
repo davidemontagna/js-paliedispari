@@ -33,5 +33,3 @@ function palindromo(stringa){
 const risultato = palindromo(frasePal);
 
 
-//stampo il risultato
-console.log(risultato);
