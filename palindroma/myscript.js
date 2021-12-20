@@ -2,15 +2,7 @@
 Chiedere all’utente di inserire una parola
 Creare una funzione per capire se la parola inserita è palindroma*/
 
-
-//Chiedo all'utente di inserire una parola
-let parolaUtente = prompt("Inserisci una parola:");
-parolaUtente = parolaUtente.toLowerCase();  //trasformo le maiuscole in minuscole
-let frasePal = parolaUtente.replace(/\s/g, "");  // elimino gli spazi da una possibile frase
-console.log(frasePal)
-
 //Creo una funzione per controllare se le prime lettere sono uguali alle ultime
-
 function palindromo(stringa){
     const lunghezza = stringa.length;
 
@@ -24,12 +16,19 @@ function palindromo(stringa){
             
             pal = "Non è palindromo";
         }
-    }
-    console.log(pal);
-
+    }   
+    return pal;
 }
+
+//Chiedo all'utente di inserire una parola
+let parolaUtente = prompt("Inserisci una parola:");
+parolaUtente = parolaUtente.toLowerCase();  //trasformo le maiuscole in minuscole
+let frasePal = parolaUtente.replace(/\s/g, "");  // elimino gli spazi da una possibile frase
+console.log(frasePal)
+
 
 //assegno la funzione a una variabile
 const risultato = palindromo(frasePal);
 
 
+console.log(risultato);

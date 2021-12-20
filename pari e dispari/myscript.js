@@ -12,6 +12,17 @@ function randomNum(){  //funzione per generare un numero da 1 a 5
     return random;
 }
 
+//funzione con cui controllo se la somma è pari o dispari
+function evenOrOdd(){
+
+    if(addition % 2 != 0){
+        addition = "dispari";
+    }else{
+        addition = "pari";
+    }
+    return addition;
+}
+
 
 //chiedo all'utente se sceglie pari o dispari e di inserire un numero da 1 a 5
 let choose = prompt("Scegli, pari o dispari?");  
@@ -27,16 +38,7 @@ console.log(`Hai inserito il numero: ${userNumber}`);
 console.log(`Il numero del computer è: ${numPc}`);
 console.log(`La somma dei due numeri è pari a: ${addition}`);
 
-//funzione con cui controllo se la somma è pari o dispari
-function evenOrOdd(){
 
-    if(addition % 2 != 0){
-        addition = "dispari";
-    }else{
-        addition = "pari";
-    }
-    return addition;
-}
 
 //salvo la funzione per il controllo pari o dispari in una variabile
 let check = evenOrOdd();
